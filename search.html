@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+   background-image: url('background.jpg');
+  background-repeat: repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+  background-color: #00008B;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  width: 100vw
+  height: 100vh;
+}
+
+
+
+img {
+height: 120px;
+  width: 120px;
+        object-fit: cover;
+		  left: 0px;
+  bottom: 0px;
+  top: 0px;
+      }
+
+.para{
+font-family:Tw Cen MT; text-align: center;
+ }
+.button
+{
+type="button";
+background-color:dimgrey  ;
+color: white;
+border-radius: 12px;
+}
+
+#tableformat {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+   padding: 20px;
+}
+
+#tableformat td, #tableformat th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tableformat tr:nth-child(odd){background-color: #f2f2f2;}
+
+
+
+#tableformat th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #353839;
+  color: white;
+}
+ @media screen and (max-width: 640px) {
+    img {
+                width: 25%;
+        height: 25%;
+        object-fit: cover;
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+  
+  <img src="logo.png" alt="logo" align="Left">
+  </div>
+  <h1 style="font-family:Copperplate Gothic Light;color:White;font-weight: italic">
+  <b>U.S Department Of Education</b>
+  </h1>
+  <h2 style="font-family:Copperplate Gothic Light;color:White;font-weight: italic">
+  University Tracker
+  </h2>
+
+</div>
+
+<div class="topnav">
+  <a href="main.html">Home</a>
+  <a href="search.html">Search University</a>
+  <a href="#">Admission History</a>
+  <a href="about.html">About Us</a>
+  
+</div>
+<div class = "para">
+           <h3> <label for="City"><strong>City:</strong></label><br></h3>
+            <input type="text" id="City" name="City"><br><br>
+            <button class=button>Search</button>
+            <button class=button>Create New</button>
+</div>
+<br />
+
+<h3><strong>COLLEGES</strong></h3>
+<table id="tableformat">
+        <tr>
+            <th>University ID</th>
+            <th>Institution Name</th>
+            <th>City</th>
+			<th>State</th>
+            <th>Zipcode</th>
+            <th>Accreditation</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+<tr><td>133863</td><td>Concorde Career Institute-Tampa</td><td>Tampa</td><td>FL</td><td>33607-4127</td><td>Accrediting Commission of Career Schools and Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>134495</td><td>Hillsborough Community College</td><td>Tampa</td><td>FL</td><td>33606-3584</td><td>Southern Association of Colleges and Schools Commission on Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>137351</td><td>University of South Florida</td><td>Tampa</td><td>FL</td><td>33620-9951</td><td>Southern Association of Colleges and Schools Commission on Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>137801</td><td>Altierus Career College-Tampa</td><td>Tampa</td><td>FL</td><td>33614-5801</td><td>Accrediting Commission of Career Schools and Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>137847</td><td>The University of Tampa</td><td>Tampa</td><td>FL</td><td>33606-1490</td><td>Southern Association of Colleges and Schools Commission on Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>367875</td><td>Brewster Technical College</td><td>Tampa</td><td>FL</td><td>33602-2196</td><td>Council on Occupational Education</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>369419</td><td>Erwin Technical College</td><td>Tampa</td><td>FL</td><td>33610-8299</td><td>Council on Occupational Education</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>378886</td><td>Artistic Nails and Beauty Academy-Tampa</td><td>Tampa</td><td>FL</td><td>33605</td><td>National Accrediting Commission of Career Arts and Sciences</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>404338</td><td>Schiller International University</td><td>Tampa</td><td>FL</td><td>33602</td><td>Accrediting Council for Independent Colleges and Schools</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>449038</td><td>Strayer University-Florida</td><td>Tampa</td><td>FL</td><td>33610</td><td>Middle States Commission on Higher Education</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>449898</td><td>South University-Tampa</td><td>Tampa</td><td>FL</td><td>33614-7095</td><td>Southern Association of Colleges and Schools Commission on Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>449959</td><td>Paul Mitchell the School-Tampa</td><td>Tampa</td><td>FL</td><td>33625</td><td>National Accrediting Commission of Career Arts and Sciences</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>451167</td><td>Shear Excellence Hair Academy</td><td>Tampa</td><td>FL</td><td>33614</td><td>National Accrediting Commission of Career Arts and Sciences</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>457420</td><td>Summit Salon Academy</td><td>Tampa</td><td>FL</td><td>33624</td><td>Accrediting Commission of Career Schools and Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>485342</td><td>Aparicio-Levy Technical College</td><td>Tampa</td><td>FL</td><td>33610</td><td>Council on Occupational Education</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>487427</td><td>Florida Career College-Tampa</td><td>Tampa</td><td>FL</td><td>33619-8347</td><td>Council on Occupational Education</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>490018</td><td>National Personal Training Institute-Tampa</td><td>Tampa</td><td>FL</td><td>33634</td><td>Accrediting Commission of Career Schools and Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>491136</td><td>Empire Beauty School-Tampa</td><td>Tampa</td><td>FL</td><td>33619-2619</td><td>National Accrediting Commission of Career Arts and Sciences</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>13508109</td><td>Keiser University-Tampa</td><td>Tampa</td><td>FL</td><td>33634</td><td>Southern Association of Colleges and Schools Commission on Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>13830903</td><td>Rasmussen College-Tampa/Brandon</td><td>Tampa</td><td>FL</td><td>336109558</td><td>Higher Learning Commission</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+ <tr><td>38561903</td><td>Everglades University - Tampa</td><td>Tampa</td><td>FL</td><td>33609</td><td>Southern Association of Colleges and Schools Commission on Colleges</td><td><button class=button>Update</button></td><td><button class=button>Delete</button></td></tr>
+
+
+</table>
+</body>
+</html>
