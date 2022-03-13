@@ -1,73 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Website Layout</title>
+<title>University Tracker</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="main.css">
 <style>
-
-body {
-  margin: 0;
-   background-image: url('background.jpg');
-  background-repeat: repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-    width: 100vw;
-    height: 100vh;
-}
-
-.header {
-  background-color: #00008B;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Style the topnav links */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
-
-
-img {
-        width: 120px;
-        height: 120px;
-		  left: 0px;
-  bottom: 0px;
-  top: 0px;
-        object-fit: cover;
-      }
-
-.para{
-font-family:Tw Cen MT; text-align: center;
- }
-* {
-  box-sizing: border-box;
-}
-
 /* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
   padding: 10px;
+
 }
 
 /* Clear floats after the columns */
@@ -80,15 +24,14 @@ font-family:Tw Cen MT; text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 25%;
 }
- @media screen and (max-width: 640px) {
-    img {
-                width: 25%;
-        height: 25%;
-        object-fit: cover;
-    }
-</style>
+.erd{
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: 75%
+  }
+  </style>
 </head>
 <body>
 
@@ -106,9 +49,9 @@ font-family:Tw Cen MT; text-align: center;
   </div>
 
 <div class="topnav">
-  <a href="main.html">Home</a>
+  <a href="index.html">Home</a>
   <a href="search.html">Search University</a>
-  <a href="#">Admission History</a>
+  <a href="Criteria.html">Admission Criteria</a>
   <a href="about.html">About Us</a>
   
 </div>
@@ -116,26 +59,45 @@ font-family:Tw Cen MT; text-align: center;
 
 <h2 style = "text-align: center;">Our Team</h2>
 <div class="row">
-  <div class="column">
-  <img src = "test.jpg" class="center">
-    <h3 style = "text-align: center;">Name</h3>
-    <p>Some text..</p>
+  <div class="column" style="border:black; border-width:3px; border-style:solid;">
+  <img src = "charishmaC.png" class="center">
+    <h3 style = "text-align: center;">Charishma Chakka</h3>
+    <p class = "para"> Charishma Chakka has 5 years experince as an Infrastructure Analyst.  Passionate about converting data into meaningful insights to draw conclusions.</p>
+	<p class = "para"> Worked on implementing the web look layout and Home page along with about us page on the web.</p>
+			<br>             
+	</br>
   </div>
-  <div class="column">
-<img src = "test.jpg" class="center">
-    <h3 style = "text-align: center;">Name</h3>
-    <p>Some text..</p>
+  <div class="column" style="border:black; border-width:3px; border-style:solid;">
+<img src = "harsha.png" class="center">
+    <h3 style = "text-align: center;">Vishwanath Sri Harsha Kotturi</h3>
+    <p class = para>Harsha has 5 years of experience as a Business Intelligence and Data Analytics developer, I am passionate about leveraging data analytics and machine learning to build constructive solutions that drive strategic and operational choices in order to favorably affect products and their users.</p>
+	<p class = para>Created the statistics page and ERD, including data modeling.
+	<br> </br>
+	</p>
+
   </div>
-  <div class="column">
-<img src = "test.jpg" class="center">
-    <h3 style = "text-align: center;">Name</h3>
-    <p>Some text..</p>
+  <div class="column" style="border:black; border-width:3px; border-style:solid;">
+<img src = "lavanya.jpeg" class="center">
+    <h3 style = "text-align: center;">Lavanya Chundu</h3>
+    <p class = para>Lavanya has 6 years experince as Storage Administrator. Passionate about analysing and visualizing the data to see the trends. </p>
+	<p class = para> Created CRUD function page and also searched for the dataset along with the API</p>
+	<br> </br>
+
   </div>
 </div>
+<br>
+</br>
+<br>
+</br>
 <div class = para>
 <p> We have used data.gov API in this website.</p>
 <p> From the Dataset, we can get information about all university present in a City along with their details </p>
-<p> <b> Please find the below the data model </b> <p>
+<p> Check out our Source code at <a href="https://github.com/cchakka/Assignment-3-Look-and-Feel" style = "text-align: right, color = blue">GitHub</a></p>
+<h3> <b>  Data Model </b> </h3>
+<img src = "erd.jpeg" class="erd">
+<br>
+</br>
+
 </div>
 </body>
 </html>
