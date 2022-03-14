@@ -5,6 +5,158 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="main.css">
+<script type="text/javascript">
+  window.onload = function () {
+    var chart1 = new CanvasJS.Chart("chartContainer1", {
+
+      title:{
+        text: "Admission Rate"              
+      },
+      data: [//array of dataSeries              
+        { //dataSeries object
+
+         /*** Change type "column" to "bar", "area", "line" or "pie"***/
+         type: "column",
+         dataPoints: [
+           { label: "Concorde Career Institute-Tampa" , y: 91.67 },
+ { label: "Hillsborough Community College" , y: 99 },
+ { label: "University of South Florida" , y: 47.63 },
+ { label: "Altierus Career College-Tampa" , y: 99 },
+ { label: "The University of Tampa" , y: 44.75 },
+ { label: "Brewster Technical College" , y: 99 },
+ { label: "Erwin Technical College" , y: 99 },
+ { label: "Artistic Nails and Beauty Academy-Tampa" , y: 99 },
+ { label: "Schiller International University" , y: 99 },
+ { label: "Strayer University-Florida" , y: 99 },
+ { label: "South University-Tampa" , y: 99 },
+ { label: "Paul Mitchell the School-Tampa" , y: 99 },
+ { label: "Shear Excellence Hair Academy" , y: 99 },
+ { label: "Summit Salon Academy" , y: 99 },
+ { label: "Aparicio-Levy Technical College" , y: 99 },
+ { label: "Florida Career College-Tampa" , y: 99 },
+ { label: "National Personal Training Institute-Tampa" , y: 99 },
+ { label: "Empire Beauty School-Tampa" , y: 99 },
+ { label: "Keiser University-Tampa" , y: 99 },
+ { label: "Rasmussen College-Tampa/Brandon" , y: 99 },
+ { label: "Everglades University - Tampa" , y: 99 }
+
+         ]
+       }
+       ],
+	       axisY:{
+     
+      suffix: "%"
+    }   
+     });
+var chart2 = new CanvasJS.Chart("chartContainer2", {            
+      title:{
+        text: "Average Score"              
+      },
+
+      data: [  //array of dataSeries     
+      { //dataSeries - first quarter
+ /*** Change type "column" to "bar", "area", "line" or "pie"***/        
+       type: "column",
+       name: "Average SAT Score",
+       showInLegend: true,
+       dataPoints: [
+  { label: "Concorde Career Institute-Tampa" , y: 1000 },
+ { label: "Hillsborough Community College" , y: 993 },
+ { label: "University of South Florida" , y: 1263 },
+ { label: "Altierus Career College-Tampa" , y: 994 },
+ { label: "The University of Tampa" , y: 1194 },
+ { label: "Brewster Technical College" , y: 1005 },
+ { label: "Erwin Technical College" , y: 992 },
+ { label: "Artistic Nails and Beauty Academy-Tampa" , y: 1000 },
+ { label: "Schiller International University" , y: 1005 },
+ { label: "Strayer University-Florida" , y: 993 },
+ { label: "South University-Tampa" , y: 994 },
+ { label: "Paul Mitchell the School-Tampa" , y: 1001 },
+ { label: "Shear Excellence Hair Academy" , y: 992 },
+ { label: "Summit Salon Academy" , y: 996 },
+ { label: "Aparicio-Levy Technical College" , y: 1001 },
+ { label: "Florida Career College-Tampa" , y: 1003 },
+ { label: "National Personal Training Institute-Tampa" , y: 995 },
+ { label: "Empire Beauty School-Tampa" , y: 997 },
+ { label: "Keiser University-Tampa" , y: 1000 },
+ { label: "Rasmussen College-Tampa/Brandon" , y: 994 },
+ { label: "Everglades University - Tampa" , y: 1002 }
+
+       ]
+     },
+	 { //dataSeries - first quarter
+ /*** Change type "column" to "bar", "area", "line" or "pie"***/        
+       type: "column",
+       name: "Average SAT Writing Score",
+       showInLegend: true,
+       dataPoints: [
+        { label: "Concorde Career Institute-Tampa" , y: 515 },
+ { label: "Hillsborough Community College" , y: 512 },
+ { label: "University of South Florida" , y: 625 },
+ { label: "Altierus Career College-Tampa" , y: 512 },
+ { label: "The University of Tampa" , y: 590 },
+ { label: "Brewster Technical College" , y: 513 },
+ { label: "Erwin Technical College" , y: 514 },
+ { label: "Artistic Nails and Beauty Academy-Tampa" , y: 515 },
+ { label: "Schiller International University" , y: 514 },
+ { label: "Strayer University-Florida" , y: 512 },
+ { label: "South University-Tampa" , y: 514 },
+ { label: "Paul Mitchell the School-Tampa" , y: 511 },
+ { label: "Shear Excellence Hair Academy" , y: 512 },
+ { label: "Summit Salon Academy" , y: 514 },
+ { label: "Aparicio-Levy Technical College" , y: 512 },
+ { label: "Florida Career College-Tampa" , y: 510 },
+ { label: "National Personal Training Institute-Tampa" , y: 511 },
+ { label: "Empire Beauty School-Tampa" , y: 512 },
+ { label: "Keiser University-Tampa" , y: 513 },
+ { label: "Rasmussen College-Tampa/Brandon" , y: 513 },
+ { label: "Everglades University - Tampa" , y: 512 }
+
+       ]
+     },
+
+     { //dataSeries - second quarter
+
+      type: "column",
+      name: "Average SAT Maths Score", 
+      showInLegend: true,               
+      dataPoints: [
+ { label: "Concorde Career Institute-Tampa" , y: 523 },
+ { label: "Hillsborough Community College" , y: 523 },
+ { label: "University of South Florida" , y: 625 },
+ { label: "Altierus Career College-Tampa" , y: 523 },
+ { label: "The University of Tampa" , y: 585 },
+ { label: "Brewster Technical College" , y: 523 },
+ { label: "Erwin Technical College" , y: 522 },
+ { label: "Artistic Nails and Beauty Academy-Tampa" , y: 521 },
+ { label: "Schiller International University" , y: 521 },
+ { label: "Strayer University-Florida" , y: 521 },
+ { label: "South University-Tampa" , y: 522 },
+ { label: "Paul Mitchell the School-Tampa" , y: 523 },
+ { label: "Shear Excellence Hair Academy" , y: 520 },
+ { label: "Summit Salon Academy" , y: 518 },
+ { label: "Aparicio-Levy Technical College" , y: 521 },
+ { label: "Florida Career College-Tampa" , y: 520 },
+ { label: "National Personal Training Institute-Tampa" , y: 519 },
+ { label: "Empire Beauty School-Tampa" , y: 523 },
+ { label: "Keiser University-Tampa" , y: 519 },
+ { label: "Rasmussen College-Tampa/Brandon" , y: 519 },
+ { label: "Everglades University - Tampa" , y: 518 }
+
+      ]
+    }
+    ],
+
+ 
+  });
+
+
+    chart1.render();
+	chart2.render();
+  }
+ 
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 <style>
 .chart{
   margin-left: auto;
@@ -38,7 +190,10 @@
 <div class = para>
 <h2 style = "text-align: center;">Admission Criteria</h2>
 <p> Below are few of the Statistics which can help the student to admission criteria for all collages in the City.</p>
-<img src = "chart.png" class = "chart">
+  <div id="chartContainer1" style="height: 300px; width: 100%;">
+  </div>
+    <div id="chartContainer2" style="height: 100%; width: 100%;">
+  </div>
 <br>
 </br>
 
